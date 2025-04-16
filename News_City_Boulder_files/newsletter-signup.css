@@ -16,6 +16,7 @@
   }
 }
 
+
 @media (min-width: 75em) {
   .l-three-col__main .c-newsletter-signup {
     margin-left: -165px;
@@ -34,10 +35,11 @@
     margin-bottom: 1.5rem;
   }
 }
-.c-newsletter-signup__content h2 {
+.c-newsletter-signup__content h3 {
   color: #fff;
   font-size: 36px;
 }
+
 
 .c-newsletter-signup__action {
   width: 100%;

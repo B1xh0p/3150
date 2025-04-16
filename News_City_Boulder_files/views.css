@@ -1,0 +1,43 @@
+/**
+ * Components - Views
+ * - 01 - Imports
+ * - 02 - Layout
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Layout
+\*------------------------------------*/
+.view__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.view__list .view__items {
+  padding: 0;
+}
+.view__list .view__item:not(:first-child) {
+  margin-top: 24px;
+}
+.view__list .view__item p {
+  margin: 0;
+}
+
+/*------------------------------------*\
+  03 - Views Block
+\*------------------------------------*/
+.block.block__type--views > h2 {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+@media (min-width: 37.5em) {
+  .block.block__type--views > h2 {
+    font-size: 0.9rem;
+  }
+}
+.block.block__type--views .view__footer {
+  margin-top: 40px;
+}

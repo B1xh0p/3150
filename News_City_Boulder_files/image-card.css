@@ -1,0 +1,115 @@
+.c-image-card {
+  background-color: #000;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  height: 0;
+  padding-top: 68.9655172%;
+}
+
+.c-image-card--no-image {
+  transition: background-color 0.2s ease-in-out 0s;
+  background-color: #406F8C;
+}
+.c-image-card--no-image:hover {
+  background-color: #305369;
+}
+
+.c-image-card--with-image:before {
+  transition: transform 0.2s ease-in-out 0s;
+  display: block;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 40%, transparent);
+  content: "";
+  height: 80%;
+  left: 0;
+  max-height: 15rem;
+  position: absolute;
+  transform: translateY(-1rem);
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.c-image-card--with-image:hover:before {
+  transform: translateY(0);
+}
+
+.c-image-card__content {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  left: 0;
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+@media (max-width: 61.9375em) {
+  .c-image-card--no-image .c-image-card__content {
+    margin-bottom: 5rem;
+  }
+}
+
+.c-image-card__title {
+  font-size: 1rem;
+  color: #fff;
+}
+@media (min-width: 37.5em) {
+  .c-image-card__title {
+    font-size: 1.2rem;
+  }
+}
+.c-image-card__title a {
+  border-top: 1px solid #fff;
+  display: block;
+  padding-top: 0.8rem;
+}
+
+@media (min-width: 62em) {
+  .tile-grid__item:first-of-type .c-image-card__title {
+    font-size: 1.35rem;
+  }
+}
+@media (min-width: 62em) and (min-width: 37.5em) {
+  .tile-grid__item:first-of-type .c-image-card__title {
+    font-size: 2.1rem;
+  }
+}
+
+.c-image-card__date {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+@media (min-width: 37.5em) {
+  .c-image-card__date {
+    font-size: 0.7rem;
+  }
+}
+
+.c-image-card__image div, .c-image-card__image figure {
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.c-image-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.billboard__card:first-child .c-image-card__image:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 30%, transparent);
+  height: 70%;
+}

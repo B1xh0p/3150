@@ -1,0 +1,55 @@
+.page-intro {
+  background-color: #E2EDF2;
+}
+
+.page-intro--alt {
+  background-color: transparent;
+}
+
+@media (max-width: 47.9375em) {
+  .page-intro--normal .page-intro__inner {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 48em) {
+  .page-intro--normal .page-intro__inner {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 62em) {
+  .page-intro--normal .page-intro__inner {
+    padding-bottom: 4rem;
+  }
+}
+
+.page-intro--billboard {
+  position: relative;
+}
+.page-intro--billboard:after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 6rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.page-node-type-trailhead .page-intro--billboard:after, .page-node-type-trail .page-intro--billboard:after {
+  height: 11rem;
+}
+
+.page-intro__inner {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 47.9375em) {
+  .page-intro__inner {
+    padding-top: 1rem;
+  }
+}
+
+.page-intro_facility .page-intro__inner {
+  padding-bottom: 0;
+}

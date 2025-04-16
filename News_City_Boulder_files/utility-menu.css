@@ -1,0 +1,85 @@
+.menu--utility .menu__link {
+  color: #000;
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.menu--utility .menu__link.is-active-trail, .menu--utility .menu__link.is-active, .menu--utility .menu__link:hover {
+  text-decoration: underline;
+}
+.menu--utility .menu__item--icon {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+@media (max-width: 47.9375em) {
+  .menu--utility .menu__item--icon svg {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 48em) {
+  .menu--utility .menu__item__text--icon {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.masthead--desktop .menu--utility {
+  align-items: center;
+  display: flex;
+}
+.masthead--desktop .menu--utility .menu__item {
+  margin-left: 1.5rem;
+}
+.masthead--desktop .menu--utility .menu__link[data-icon] {
+  transition: transform 0.2s ease-in-out 0s;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.masthead--desktop .menu--utility .menu__link[data-icon] svg {
+  fill: currentColor;
+}
+.masthead--desktop .menu--utility .menu__link[data-icon]:hover {
+  transform: rotate(10deg);
+}
+.masthead--desktop .menu--utility .menu__link[data-icon] svg {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 62em) {
+  .masthead--desktop .menu--utility .menu__link {
+    font-size: 0.9rem;
+  }
+  .masthead--desktop .menu--utility .menu__link[data-icon] {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.masthead__mobile-nav .menu--utility .menu__item {
+  margin-bottom: 1rem;
+}
+.masthead__mobile-nav .menu--utility .menu__item.hide-mobile {
+  display: none;
+}
+.masthead__mobile-nav .menu--utility .menu__link[data-icon] {
+  transition: transform 0.2s ease-in-out 0s;
+  height: 65px;
+  padding: 1rem 0;
+  width: 45px;
+}
+.masthead__mobile-nav .menu--utility .menu__link[data-icon] svg {
+  fill: currentColor;
+}
+.masthead__mobile-nav .menu--utility .menu__link[data-icon] svg {
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+}

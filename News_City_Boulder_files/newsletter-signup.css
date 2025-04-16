@@ -1,0 +1,105 @@
+.c-newsletter-signup {
+  background-color: #9C5449;
+  background-image: url("../../../../images/mountain-slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 50px 60px;
+}
+@media (min-width: 75em) {
+  .c-newsletter-signup {
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 75em) {
+  .l-three-col__main .c-newsletter-signup {
+    margin-left: -165px;
+    width: 960px;
+  }
+}
+
+.c-newsletter-signup__content {
+  font-size: 36px;
+  font-weight: 700;
+  width: 100%;
+}
+@media (max-width: 74.9375em) {
+  .c-newsletter-signup__content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+.c-newsletter-signup__content h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.c-newsletter-signup__action {
+  width: 100%;
+}
+@media (min-width: 75em) {
+  .c-newsletter-signup__action {
+    max-width: 460px;
+  }
+}
+.c-newsletter-signup__action form {
+  width: 100%;
+}
+@media (min-width: 37.5em) {
+  .c-newsletter-signup__action form {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.c-newsletter-signup__action .form-item,
+.c-newsletter-signup__action .form-actions {
+  margin: 0;
+}
+.c-newsletter-signup__action .form-item label,
+.c-newsletter-signup__action .form-actions label {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.c-newsletter-signup__action .form-item input[type=email] {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 20px;
+  height: 60px;
+  width: 100%;
+}
+.c-newsletter-signup__action ::-moz-placeholder {
+  color: #fff;
+}
+.c-newsletter-signup__action ::placeholder {
+  color: #fff;
+}
+.c-newsletter-signup__action .form-actions input[type=submit] {
+  background-color: #fff;
+  color: #9C5449;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0 1rem;
+  border: none;
+  height: 60px;
+}
+@media (max-width: 37.4375em) {
+  .c-newsletter-signup__action .form-actions input[type=submit] {
+    margin: 1em;
+    display: block;
+    width: 100%;
+  }
+}

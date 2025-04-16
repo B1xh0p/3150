@@ -1,0 +1,352 @@
+/**
+ * Settings - Animations
+ * Standard sets of animation variables and mappings to be of use across the site, for consistency and accuracy.
+ *
+ * - 01 - Transitions
+ */
+/*------------------------------------*\
+  01 - Transitions
+\*------------------------------------*/
+/**
+ * Settings - Breakpoints
+ * - 01 - Mapping
+ */
+/*------------------------------------*\
+  01 - Mapping
+  Default mapping of grid breakpoints, which is used in the function and mixin breakpoint files. An example of using
+  breakpoints in a file is by using the mixin with the name of a breakpoint: `@include bp-min(small) {}`.
+
+  These breakpoints may be altered depending on the theme needs.
+\*------------------------------------*/
+/**
+ * Settings - Color
+ * Standard sets of color variables and mappings to be of use across the site, for consistency and accuracy.
+ *
+ * - 01 - Theme Colors
+ * - 02 - Grayscale
+ * - 03 - Utilities
+ * - 04 - Mapping
+ */
+/*------------------------------------*\
+  01 - Theme Colors
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Grayscale
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Utilities
+\*------------------------------------*/
+/*------------------------------------*\
+  04 - Mapping
+\*------------------------------------*/
+/**
+ * Settings - Layout
+ * Standard sets of layout variables and mappings to be of use across the site, for consistency and accuracy.
+ *
+ * - 01 - Grid
+ * - 02 - Widths
+ * - 03 - Layers
+ */
+/*------------------------------------*\
+  01 - Grid
+\*------------------------------------*/
+/*------------------------------------*\
+  01 - Widths
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Layers
+\*------------------------------------*/
+/**
+ * Settings - Typography
+ * Standard sets of typographical variables and mappings to be of use across the site, for consistency and accuracy.
+ *
+ * - 01 - Heading Sizes
+ * - 02 - Line Heights
+ */
+/*------------------------------------*\
+  01 - Heading Sizes
+\*------------------------------------*/
+/*------------------------------------*\
+  01 - Line Heights
+\*------------------------------------*/
+/**
+ * Functions - Animations
+ * Simple functions to help developers easily grab pre-defined animation values from mapping lists.
+ *
+ * - 01 - Imports
+ * - 02 - Transition
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Transition
+  Easy to use function to quickly define a transition with the ability to reference a library mapping of bezier-curve
+  animations, as defined in `partials/settings/_animations.scss`.
+  - @param $argument: Style arguments that this transition should be applied to.
+  - @param $duration: The length of time the transition should take place.
+  - @param $style: The style of transition, as defined in `partials/settings/_animations.scss`
+  - @example = transition: transition(all, 0.6s, easeInOutSine)
+\*------------------------------------*/
+/**
+ * Functions - Breakpoints
+ * Breakpoint viewport sizes and media queries. Breakpoints are defined as a map of (name: minimum width), order from
+ * xsmall to xlarge: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px). The map defined in the `$grid-breakpoints`
+ * global variable is used as the `$breakpoints` argument by default.
+ *
+ * - 01 - Breakpoint Next
+ * - 02 - Breakpoint Minimum
+ * - 03 - Breakpoint Maximum
+ * - 04 - Breakpoint Infix
+ */
+/*------------------------------------*\
+  01 - Breakpoint Next
+  Name of the next breakpoint, or null for the last breakpoint.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoint-names: Breakpoints mapping names as defined in partials/settings/_breakpoints.scss
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Breakpoint Minimum
+  Minimum breakpoint width. Null for the smallest (first) breakpoint.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Breakpoint Maximum
+  The maximum value is reduced by 0.02px to work around the limitations of `min-` and `max-` prefixes and viewports
+  with fractional widths. See https://www.w3.org/TR/mediaqueries-4/#mq-min-max. Uses 0.02px rather than 0.01px to work
+  around a current rounding bug in Safari. See https://bugs.webkit.org/show_bug.cgi?id=178261
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+\*------------------------------------*/
+/*------------------------------------*\
+  04 - Breakpoint Infix
+  Returns a blank string if smallest breakpoint, otherwise returns the name with a dash in front. Useful for making
+  responsive utilities.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+\*------------------------------------*/
+/**
+ * Functions - Calculations
+ * Simple functions to help developers calculate different values from percentages to sizing such as REMs.
+ *
+ * - 01 - Imports
+ * - 02 - Target/Container Percentage
+ * - 03 - REMs
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Target/Container Percentage
+  Calculate the percentage of a target size compared to a container size.
+  - @param $target: Size of an element needing a calculated percentage.
+  - @param $container: Size of the target's container, needed to calculate percentage.
+  - @example = width: calc-percent(250, 1000);
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - REMs
+  Calculate a size into REM units -- mostly used for font size rendering.
+  - @param $size: Size of an element needing a calculated size into REMs.
+  - @param $base: Base font size of the site -- defaults to 16px.
+  - @example = font-size: rem(24px);
+\*------------------------------------*/
+/**
+ * Functions - Color
+ * Simple functions to help developers easily grab pre-defined color values from mapping lists.
+ *
+ * - 01 - Imports
+ * - 02 - Color
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Color
+  Main function for getting a pre-defined color from a list of values, as defined in 'partials/settings/_colors.scss.
+  - @param $color: The selected color.
+  - @example = background-color: color(primary);
+\*------------------------------------*/
+/**
+ * Functions - Layout
+ * Simple functions to help developers easily grab pre-defined layout values from mapping lists.
+ *
+ * - 01 - Imports
+ * - 02 - Widths
+ * - 03 - Z-index
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Widths
+  Main function for getting a pre-defined width from a list of values, as defined in 'partials/settings/_layout.scss.
+  - @param $width: The selected width size.
+  - @example: width: width(large);
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Z-index
+  Main function for getting a pre-defined z-index from a list of values, as defined in 'partials/settings/_layout.scss.
+  - @param $key: The selected layer type.
+  - @example = z-index: z-index(bottomless-pit)
+\*------------------------------------*/
+/**
+ * Functions - Typography
+ * Simple functions to help developers easily grab pre-defined typographical values from mapping lists.
+ *
+ * - 01 - Imports
+ * - 02 - Line Height
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Line Height
+  Main function for getting a pre-defined Line Height from a list of values, as defined in
+  `partials/settings/_typography.scss`.
+  - @param $size: The selected Line Height type.
+  - @example: line-height: line-height(heading);
+\*------------------------------------*/
+/**
+ * Mixins - Breakpoints
+ * Use these mixins mainly when defining media breakpoint specifications in theme files. Both settings and functions
+ * are imported here to supplement the mixins themselves.
+ *
+ * - 01 - Imports
+ * - 02 - Minimum Breakpoint
+ * - 03 - Maximum Breakpoint
+ * - 04 - Between Breakpoint
+ * - 05 - Only Breakpoint
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Minimum Breakpoint
+  Media/screen-size of at least the minimum breakpoint width -- apply to screen-sizes above the breakpoint specified.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+  - @example = @include bp-min(large) {}
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Maximum Breakpoint
+  Media/screen-size of at most the maximum breakpoint width -- apply to screen-sizes below the breakpoint specified.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+  - @example = @include bp-max(large) {}
+\*------------------------------------*/
+/*------------------------------------*\
+  04 - Between Breakpoint
+  Media/screen-size that spans multiple breakpoint widths -- apply to screen-sizes between the breakpoints specified.
+  - @param $lower: Selected minimum breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $upper: Selected maximum breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+  - @example = @include bp-between(xsmall, large) {}
+\*------------------------------------*/
+/*------------------------------------*\
+  05 - Only Breakpoint
+  Media/screen-size between the breakpoint's minimum and maximum widths -- No minimum for the smallest breakpoint, and
+  no maximum for the largest one.
+  - @param $name: Selected breakpoint name as defined in partials/settings/_breakpoints.scss
+  - @param $breakpoints: Breakpoints mapping values as defined in partials/settings/_breakpoints.scss
+  - @example = @include bp-only(large) {}
+\*------------------------------------*/
+/**
+ * Mixins - Lists
+ * Use these mixins when needing to easily define lists styles.
+ *
+ * - 01 - Base
+ * - 02 - Bullets
+ * - 03 - Numbered
+ * - 04 - No Bullets
+ * - 05 - Inline
+ * - 06 - Ruled
+ */
+/*------------------------------------*\
+  01 - Base
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Bullets
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Numbered
+\*------------------------------------*/
+/*------------------------------------*\
+  04 - No Bullets
+\*------------------------------------*/
+/*------------------------------------*\
+  05 - Inline
+\*------------------------------------*/
+/*------------------------------------*\
+  06 - Ruled
+\*------------------------------------*/
+/**
+ * Mixins - Typography
+ * Use these mixins when needing to easily define typography styles, such as sizes and typographical layout.
+ *
+ * - 01 - Imports
+ * - 02 - Heading Size
+ */
+/*------------------------------------*\
+  01 - Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Heading Size
+  Meant for responsive heading sizes and is based upon breakpoints and a mapping of heading sizes. Breakpoints are
+  defined in the `partials/settings/_breakpoints.scss` file and are utilized with a mixin, as defined in
+  `partials/mixins/_breakpoints.scss`.
+  - @param $setting: Selected heading to apply responsive sizing to.
+\*------------------------------------*/
+/**
+ * Partials Combined
+ * Partials can be imported into theme files either one by one, or by using this combined Partials file. To use this
+ * file as the import statement, `@use '[path]/partials/partials' as *`.
+ *
+ * - 01 - Settings
+ * - 02 - Functions
+ * - 03 - Mixins
+ */
+/*------------------------------------*\
+  01 - Settings
+\*------------------------------------*/
+/*------------------------------------*\
+  02 - Functions
+\*------------------------------------*/
+/*------------------------------------*\
+  03 - Mixins
+\*------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-height-loose);
+}
+
+:first-child {
+  margin-top: 0;
+}
+
+:last-child {
+  margin-bottom: 0;
+}
+
+.skip-link {
+  display: block;
+  padding: 0.25em;
+  text-align: center;
+  color: var(--link-color-text-reverse);
+  background-color: var(--color-background-reverse);
+}
+.skip-link:hover, .skip-link:focus {
+  color: var(--link-color-text-reverse-hover);
+}

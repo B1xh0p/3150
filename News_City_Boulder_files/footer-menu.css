@@ -1,0 +1,19 @@
+.menu--footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -0.3rem;
+}
+.menu--footer .menu__item {
+  margin-bottom: 0.3rem;
+  width: 50%;
+}
+.menu--footer .menu__link {
+  color: #000;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.menu--footer .menu__link.is-active-trail, .menu--footer .menu__link.is-active, .menu--footer .menu__link:hover {
+  text-decoration: underline;
+}

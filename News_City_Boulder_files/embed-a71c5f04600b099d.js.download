@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3545],{83592:function(n,t,u){"use strict";u.r(t),u.d(t,{default:function(){return _}});var e=u(99652),r=u(98321),i=u(8928);var _=(0,r.Z)((()=>(0,i.tZ)(e.z,{hasInteractivityTools:!1})))},17970:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/showcase/[entityId]/embed",function(){return u(83592)}])}},function(n){n.O(0,[9774,9136,5572,1068,7184,4710,6415,7044,5158,1509,9652,2888,179],(function(){return t=17970,n(n.s=t);var t}));var t=n.O();_N_E=t}]);
+//# sourceMappingURL=embed-a71c5f04600b099d.js.map

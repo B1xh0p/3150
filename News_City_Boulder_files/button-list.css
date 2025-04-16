@@ -1,0 +1,50 @@
+.button-list {
+  list-style: none;
+  margin: 0 0;
+  padding: 0;
+}
+
+.button-list li,
+.button-list__item {
+  margin-bottom: 1px;
+}
+.button-list li > a,
+.button-list__item > a {
+  transition: background-color 0.2s ease-in-out 0s;
+  background-color: #9C5449;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75em 1em;
+  position: relative;
+  text-decoration: none;
+}
+.button-list li > a:after,
+.button-list__item > a:after {
+  height: 0.4166666667em;
+  width: 0.4166666667em;
+  transition: right 0.2s ease-in-out 0s;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+}
+.button-list li > a:hover,
+.button-list__item > a:hover {
+  background-color: #85473e;
+}
+.button-list li > a:hover:after,
+.button-list__item > a:hover:after {
+  right: 0.75em;
+}
+@media (min-width: 48em) {
+  .button-list li > a,
+  .button-list__item > a {
+    font-size: 1.2rem;
+  }
+}

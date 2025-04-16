@@ -1,0 +1,13 @@
+.teaser-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teaser-list__links {
+  margin-top: 2.5rem;
+}

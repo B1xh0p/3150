@@ -1,0 +1,65 @@
+/**
+ * CITY OF BOULDER - Admin Theming
+ *
+ * - 01 - Lists
+ * - 02 - Dialog
+ */
+
+
+/*------------------------------------*\
+  01 - Lists
+\*------------------------------------*/
+
+ol:not([class]) {
+  list-style-type: decimal;
+}
+
+ol ol:not([class]) {
+  list-style-type: lower-latin;
+}
+
+ol ol ol:not([class]) {
+  list-style-type: lower-roman;
+}
+
+ol.list__style--lower-alpha,
+ol.list__style--lower-alpha ol:not([class]) {
+  list-style: lower-alpha;
+}
+
+ol.list__style--lower-greek,
+ol.list__style--lower-greek ol:not([class]) {
+  list-style: lower-greek;
+}
+
+ol.list__style--lower-roman,
+ol.list__style--lower-roman ol:not([class]) {
+  list-style: lower-roman;
+}
+
+ol.list__style--upper-alpha {
+  list-style: upper-alpha;
+}
+
+ol.list__style--upper-alpha ol:not([class]) {
+  list-style: lower-alpha;
+}
+
+ol.list__style--upper-roman {
+  list-style: upper-roman;
+}
+
+ol.list__style--upper-roman ol:not([class]) {
+  list-style: lower-roman;
+}
+
+
+
+
+/*------------------------------------*\
+  02 - Dialog
+\*------------------------------------*/
+
+.ui-widget-overlay {
+  z-index: 99 !important;
+}

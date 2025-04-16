@@ -1,0 +1,89 @@
+.c-featured-item {
+  display: flex;
+  flex-flow: nowrap column;
+  padding-top: 1.5rem;
+}
+@media (min-width: 62em) {
+  .c-featured-item {
+    flex-flow: nowrap row;
+  }
+}
+.c-featured-item:hover .c-featured-item__title {
+  color: #9C5449;
+}
+.c-featured-item .c-featured-item__image {
+  flex-shrink: 0;
+  width: 100%;
+}
+@media (min-width: 62em) {
+  .c-featured-item .c-featured-item__image {
+    margin-right: 40px;
+    padding-top: 32%;
+    position: relative;
+    width: 32%;
+  }
+}
+@media (min-width: 62em) {
+  .c-featured-item .c-featured-item__image *:not(img) {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 62em) {
+  .c-featured-item .c-featured-item__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (min-width: 62em) and (-ms-high-contrast: active), (min-width: 62em) and (-ms-high-contrast: none) {
+  .c-featured-item .c-featured-item__image img {
+    max-width: inherit;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.c-featured-item .c-featured-item__content {
+  width: 100%;
+}
+
+.c-featured-item {
+  border-top: 1px solid #000;
+}
+.c-featured-item:focus-within .c-featured-item__title, .c-featured-item:hover .c-featured-item__title {
+  color: #9C5449;
+}
+.c-featured-item .c-featured-item__content {
+  padding-bottom: 24px;
+  width: 100%;
+}
+.c-featured-item .c-featured-item__title {
+  transition: color 0.2s ease-in-out 0s;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+}
+@media (min-width: 62em) {
+  .c-featured-item .c-featured-item__title {
+    font-size: 2.1rem;
+  }
+}
+.c-featured-item .c-featured-item__date {
+  color: #406F8C;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin: 0.4285714286em 0 0;
+  text-transform: uppercase;
+}

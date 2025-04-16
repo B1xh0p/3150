@@ -1,0 +1,51 @@
+/*
+ * @file
+ * Cluster layout component styles.
+ * See https://every-layout.dev/layouts/cluster/ for more information
+ */
+[class*=l-cluster] {
+  /* overflow: hidden; */
+}
+
+[class*=l-cluster] > * {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: calc(var(--space-gap-y) / 2 * -1) calc(var(--space-gap-x) / 2 * -1);
+}
+
+[class*=l-cluster] > * > * {
+  margin: calc(var(--space-gap-y) / 2) calc(var(--space-gap-x) / 2);
+}
+
+.l-cluster--start > * {
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+
+.l-cluster--center > * {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.l-cluster--end > * {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.l-cluster--end > * {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.l-cluster--no-wrap > * {
+  flex-wrap: nowrap;
+}
+
+.l-cluster__rule {
+  color: var(--color-border);
+}

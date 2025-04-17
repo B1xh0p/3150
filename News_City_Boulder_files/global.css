@@ -2346,7 +2346,7 @@ details summary:hover:before {
 }
 
 a:focus, button:focus, input:focus {
-  outline: 3px solid #1a73e8; /* 蓝色边框 */
-  outline-offset: 2px;        /* 让边框不紧贴内容 */
-  border-radius: 4px;         /* 可选：让边框稍微圆润 */
+  outline: 3px solid #1a73e8; 
+  outline-offset: 2px;     
+  border-radius: 4px;        
 }
